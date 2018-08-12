@@ -35,8 +35,10 @@ const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1 = 10000;
 // const size_t CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE = 600;
 const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT       = 8;
-const uint64_t MINIMUM_FEE                          = 1000000;  // pow(10, 6)
-const uint64_t DEFAULT_DUST_THRESHOLD               = 1000000;  // pow(10, 6)
+const size_t MONERONOTE_DISPLAY_DECIMAL_POINT       = 12; // 12 decimals post fork
+	
+const uint64_t MINIMUM_FEE                          = 10000000000;  // pow(10, 10)
+const uint64_t DEFAULT_DUST_THRESHOLD               = 10000000000;  // pow(10, 10)
 
 const uint32_t DIFFICULTY_TARGET          = 120;    // seconds
 const uint64_t MINIMUM_DIFFICULTY_FROM_V2 = 10000;  // TODO - complete fix in the next hardfork
@@ -123,7 +125,7 @@ const char *const CHECKPOINT_PUBLIC_KEYS_TESTNET[] = {
     "005d18764a7c4514d217d55f39633c8145e25afe91fd84837fc1a9ab5e048e8e"};
 
 const char *const SEED_NODES[] = {
-    "207.246.127.160:8080", "108.61.174.232:8080", "45.32.156.183:8080", "45.76.29.96:8080"};
+    "127.0.0.1:8080", "127.0.0.1:8080", "127.0.0.1:8080", "127.0.0.1:8080"};
 
 struct CheckpointData {
 	uint32_t height;
